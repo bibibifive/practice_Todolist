@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#app {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: 'pingfang sc', 'Courier New', Courier, monospace;
+  width: 550px;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+$blue: #278cff;
+$grey: #a7caeb;
+
+// 全部header
+.header {
+  flex-shrink: 0;
+  height: 60px;
+  padding: 0 5px 0 10px;
+  display: flex;
+  justify-content: space-around;
+  background-color: $blue;
+  align-items: center;
+  p {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #fff;
+  }
+  input {
+    border: 1px solid #22222222;
+    line-height: 1.2em;
+    flex: 1;
+    padding: 5px;
+    margin: 0 15px;
+    border-radius: 0.3em;
+    box-shadow: inset 0 0 0.1em #222;
+    // color: #fff;
+  }
+}
+
+.content {
+  flex-shrink: 1;
+  margin: 20px 0 0 5px;
+  display: flex;
+  flex-direction: column;
+  .ing {
+    li {
+      border-left: 5px solid $blue;
+    }
+  }
+  .done {
+    margin-top: 20px;
+    li {
+      border-left: 5px solid $grey;
+      opacity: 50%;
+    }
+  }
+  li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-bottom: 1px solid #22222222;
+    p {
+      flex: 1;
+      padding: 0 10px;
+      line-height: 1.8em;
+    }
+    input {
+      width: 20px;
+      cursor: pointer;
+    }
+    .icon {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      path {
+        fill: $blue;
+      }
+    }
+  }
+}
+
+// 零散样式...................................
+// .........................................
+
+// 右框边线
+.note,
+#user {
+  border-right: 1px solid #22222222;
+}
+
+// 下框边线
+.note_title {
+  border-bottom: 1px solid #22222222;
+}
+
+button {
+  width: 5em;
+  height: 2em;
+  padding: 2px 5px;
+  margin-right: 10px;
+  border: 0;
+  background-color: #fff;
+  border-radius: 0.5em;
+  color: $blue;
+  cursor: pointer;
+  &:hover {
+    filter: brightness(110%);
+  }
+}
+
+.hide {
+  margin: 0;
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  background: $blue;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 1px;
+  background: #eee;
+}

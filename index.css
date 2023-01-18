@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: "pingfang sc", "Courier New", Courier, monospace;
+  width: 550px;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.header {
+  flex-shrink: 0;
+  height: 60px;
+  padding: 0 5px 0 10px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #278cff;
+  align-items: center;
+}
+.header p {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #fff;
+}
+.header input {
+  border: 1px solid rgba(34, 34, 34, 0.1333333333);
+  line-height: 1.2em;
+  flex: 1;
+  padding: 5px;
+  margin: 0 15px;
+  border-radius: 0.3em;
+  box-shadow: inset 0 0 0.1em #222;
+}
+
+.content {
+  flex-shrink: 1;
+  margin: 20px 0 0 5px;
+  display: flex;
+  flex-direction: column;
+}
+.content .ing li {
+  border-left: 5px solid #278cff;
+}
+.content .done {
+  margin-top: 20px;
+}
+.content .done li {
+  border-left: 5px solid #a7caeb;
+  opacity: 50%;
+}
+.content li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.1333333333);
+}
+.content li p {
+  flex: 1;
+  padding: 0 10px;
+  line-height: 1.8em;
+}
+.content li input {
+  width: 20px;
+  cursor: pointer;
+}
+.content li .icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.content li .icon path {
+  fill: #278cff;
+}
+
+.note,
+#user {
+  border-right: 1px solid rgba(34, 34, 34, 0.1333333333);
+}
+
+.note_title {
+  border-bottom: 1px solid rgba(34, 34, 34, 0.1333333333);
+}
+
+button {
+  width: 5em;
+  height: 2em;
+  padding: 2px 5px;
+  margin-right: 10px;
+  border: 0;
+  background-color: #fff;
+  border-radius: 0.5em;
+  color: #278cff;
+  cursor: pointer;
+}
+button:hover {
+  filter: brightness(110%);
+}
+
+.hide {
+  margin: 0;
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  background: #278cff;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 1px;
+  background: #eee;
+}/*# sourceMappingURL=index.css.map */

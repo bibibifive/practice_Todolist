@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1.8 JavaScript应用</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="header">
+        <p>ToDolist</p>
+        <input type="text" placeholder="请输入ToDo" id="addtodo" />
+        <button class="add" onclick="AddByButton(this)">添加</button>
+      </div>
+      <div class="content">
+        <div class="ing">
+          <h2>正在进行</h2>
+          <ul>
+            <!-- <li>
+              <input type="checkbox" onclick="TOdone(this)" />
+              <p>提醒我定闹钟</p>
+              <div class="icon" onclick="Delete(this)">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg
+                  width="25"
+                  height="25"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 12L16.2 5H31.8L33 12"
+                    stroke="#333"
+                    stroke-width="4"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6 12H42"
+                    stroke="#333"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M37 12L35 43H13L11 12H37Z"
+                    fill="#333"
+                    stroke="#333"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M19 35H29"
+                    stroke="#FFF"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </li>
+            <li>
+              <input type="checkbox" onclick="TOdone(this)" />
+              <p>明天带伞</p>
+              <div class="icon" onclick="Delete(this)">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg
+                  width="25"
+                  height="25"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 12L16.2 5H31.8L33 12"
+                    stroke="#333"
+                    stroke-width="4"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6 12H42"
+                    stroke="#333"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M37 12L35 43H13L11 12H37Z"
+                    fill="#333"
+                    stroke="#333"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M19 35H29"
+                    stroke="#FFF"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </li> -->
+          </ul>
+        </div>
+        <div class="done">
+          <h2>已经完成</h2>
+          <ul>
+            <!-- <li>
+              <input type="checkbox" onclick="TOing(this)" checked />
+              <p>今晚整理衣物</p>
+              <div class="icon" onclick="Delete(this)">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg
+                  width="25"
+                  height="25"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 12L16.2 5H31.8L33 12"
+                    stroke="#333"
+                    stroke-width="4"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6 12H42"
+                    stroke="#333"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M37 12L35 43H13L11 12H37Z"
+                    fill="#333"
+                    stroke="#333"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M19 35H29"
+                    stroke="#FFF"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
