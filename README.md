@@ -1,2 +1,2 @@
 # practice_Todolist
- 这是一个 todolist 的MVC练习
+ 这是一个 todolist 带有localstorage的练习
